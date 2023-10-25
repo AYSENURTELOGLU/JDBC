@@ -30,6 +30,11 @@ public class JDBC_Query03 {
         assertEquals(expectedData,actualData);
 
         //5. Adim olarak : veritabanı bağlantısını bitir.
+        //Last In First Out=LIFO
+
+        resultSet.close();
+        statement.close();
+        connection.close();
 
 
 
